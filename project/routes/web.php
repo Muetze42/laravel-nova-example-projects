@@ -25,12 +25,9 @@ Route::middleware(HandleInertiaRequests::class)->group(function () {
     Route::get('login', [AuthController::class, 'showLogin']);
     Route::post('login', [AuthController::class, 'login']);
 });
-
-
 Route::domain(config('nova.domain', null))
     ->middleware(config('nova.middleware', []))
     ->prefix(Nova::path())
     ->group(function (Router $router) {
         $router->post('logout', [LoginController::class, 'logout'])->name('custom.nova.logout');
     });
-
