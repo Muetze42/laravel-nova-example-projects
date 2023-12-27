@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Middleware\HandleInertiaRequests;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Http\Controllers\LoginController;
@@ -19,9 +21,16 @@ use Laravel\Nova\Nova;
 
 Route::get('/', HomeController::class);
 
+Route::middleware(HandleInertiaRequests::class)->group(function () {
+    Route::get('login', [AuthController::class, 'showLogin']);
+    Route::post('login', [AuthController::class, 'login']);
+});
+
+
 Route::domain(config('nova.domain', null))
     ->middleware(config('nova.middleware', []))
     ->prefix(Nova::path())
     ->group(function (Router $router) {
         $router->post('logout', [LoginController::class, 'logout'])->name('custom.nova.logout');
     });
+

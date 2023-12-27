@@ -4,3 +4,26 @@
 
 //@import "fonts/inter-var";
 //@import "fonts/fira-code";
+.form-input {
+  @apply text-neutral-900 rounded;
+  @apply py-2 #{!important};
+}
+
+.form-checkbox {
+  @apply rounded text-sky-500 mb-1;
+}
+
+label {
+  @apply flex flex-col gap-1;
+}
+
+button {
+  @apply cursor-pointer rounded font-bold focus:outline-none focus:ring;
+  @apply ring-sky-200 dark:ring-gray-600;
+  @apply px-2 py-1;
+  @apply inline-flex items-center justify-center;
+}
+
+.danger {
+  @apply bg-red-400 border-red-500 text-white dark:text-red-950 font-medium rounded px-2;
+}
