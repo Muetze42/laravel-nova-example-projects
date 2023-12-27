@@ -14,9 +14,9 @@ packages as possible.
 
 ## Overview
 
-| Branch | Description | Authors |
-|--------|-------------|---------|
-| wip    | wip         | wip     |
+| Branch                                                                                              | Description                   | Authors |
+|-----------------------------------------------------------------------------------------------------|-------------------------------|---------|
+| [custom-login](https://github.com/Muetze42/laravel-nova-example-projects/tree/feature/custom-login) | Create Custom Nova Login Page | -       |
 
 ## More
 
