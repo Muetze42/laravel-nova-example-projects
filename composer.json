@@ -1,0 +1,19 @@
+{
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/Muetze42/laravel-nova-example-projects",
+        "issues": "https://github.com/Muetze42/laravel-nova-example-projects/issues"
+    },
+    "authors": [
+        {
+            "name": "Norman Huth",
+            "homepage": "https://huth.it"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13"
+    }
+}
