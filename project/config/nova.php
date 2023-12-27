@@ -203,4 +203,8 @@ return [
         'stopped' => '/',
     ],
 
+    'routes' => [
+        'logout' => '/nova/logout',
+        //'login' => '/my-login', // Optional: Own Login Route
+    ],
 ];
