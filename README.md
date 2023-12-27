@@ -8,6 +8,9 @@ Project is in the `/project` directory.
 
 Setup project as general Laravel Project. The Home Route create User and redirect to Nova.
 
+User Mail: name@example.com  
+User Password: secret
+
 ## Changes:
 
 Step by Step: [See Commits](https://github.com/Muetze42/laravel-nova-example-projects/commits/feature/custom-login/)
