@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function __invoke(Request $request)
     {
         if (!User::count()) {
-            User::factory()->create();
+            User::factory()->create(['password' => 'secret']);
         }
 
         Auth::login(User::first(), true);
